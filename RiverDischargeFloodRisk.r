@@ -7,7 +7,7 @@ library(dplyr)
 library(lubridate)
 
 # 2. Read Dataset & Structure Inspection
-data <- read.csv("~/Downloads/bputra2.csv", check.names = FALSE)
+data <- read.csv("bputra2.csv", check.names = FALSE)
 
 # Convert Date column (Format: DD-MMM-YY, e.g., '1-Jan-98')
 data$Date <- as.Date(data$Date, format = "%d-%b-%y")
